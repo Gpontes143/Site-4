@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary " data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Meu Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Habilidades</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projetos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../htmls/jogos_favoritos.html">Jogos Favoritos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contatos</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Ver mais
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../../areas/htmls/areasdoconhecimento.html">Areas Do Conhecimento</a></li>
+                  <li><a class="dropdown-item" href="../../cyber/htmls/Cibersegurança.html">Novidades de tecnologia</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../htmls/home.html">Portfolio</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <section id="home" class="intro-section">
+        <h1>Olá, eu sou Guilherme Pontes Campos</h1>
+
+    </section>
+    
+    
+    <!-- Seção de Habilidades -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Minhas Habilidades</h2>
+            <div class="skills-list">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Python</div>
+                <div class="skill">Java</div>
+                <div class="skill">Git</div>
+                <div class="skill">SQL</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="row gy-4">
+                <!-- Projeto 1 -->
+                <div class="col-md-4">
+                    <div class="card card-project h-100">
+                        <img src="../imagens/login.png" class="card-img-top" alt="Imagem do Projeto Aplicativo Freelancer">
+                        <div class="card-body">
+                            <h5 class="card-title">Aplicativo Freelancer</h5>
+                            <p class="card-text">Aplicativo desenvolvido para integração com SQL e Java.</p>
+                            <a href="https://github.com/Gpontes143/Freelancer" target="_blank"  class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="col-md-4">
+                    <div class="card card-project h-100">
+                        <img src="../imagens/discord.jpg" class="card-img-top" alt="Imagem do Projeto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Bot para o Discord</h5>
+                            <p class="card-text">Esse projeto foi desenvolvido para analisar jogos em promoção na steam utilizando apis e web scrapping .</p>
+                            <a href="https://github.com/Gpontes143/discord_bot" target="_blank" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                    <!-- Projeto 3 -->
+                    <div class="col-md-4">
+                        <div class="card card-project h-100">
+                            <img src="../imagens/minecraft_ti.png" class="card-img-top" alt="Imagem do Projeto 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Redes do Senac</h5>
+                                <p class="card-text">Esse projeto foi desenvolvido para desenvolver um sistema de rede para o Senac.</p>
+                                <a href="https://www.youtube.com/watch?v=yU6p0msJMyU" target="_blank" class="btn btn-primary">Ver Projeto</a>
+                            </div>
+                        </div>
+                    </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Se você quiser trabalhar comigo ou tem alguma dúvida, entre em contato abaixo!</p>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Seu nome">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
